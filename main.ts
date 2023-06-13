@@ -1,8 +1,6 @@
 import { Editor, MarkdownView, Plugin } from "obsidian";
 import { markdownToBlocks } from "@tryfabric/mack";
 
-// Remember to rename these classes and interfaces!
-
 interface MarkdownToSlackMsgSettings {
 	mySetting: string;
 }
@@ -19,7 +17,6 @@ export default class MarkdownToSlackMsg extends Plugin {
 	async onload() {
 		await this.loadSettings();
 
-		// This adds an editor command that can perform some operation on the current editor instance
 		this.addCommand({
 			id: "markdown-to-slack-message",
 			name: "Convert markdown to slack message",

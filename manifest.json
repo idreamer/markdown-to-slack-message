@@ -1,11 +1,10 @@
 {
 	"id": "markdown-to-slack-message",
 	"name": "Markdown to Slack Message",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
+	"version": "0.0.1",
+	"minAppVersion": "1.1.16",
+	"description": "This plugin converts a markdown note to the Slack message blocks that enables you to send to your slack",
 	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"authorUrl": "https://github.com/idreamer",
 	"isDesktopOnly": false
 }
