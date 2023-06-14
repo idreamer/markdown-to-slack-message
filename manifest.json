@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"minAppVersion": "1.3.5",
 	"description": "This plugin converts a markdown note to the Slack message blocks that enables you to send to your slack",
-	"author": "Obsidian",
+	"author": "Woongshik Choi",
 	"authorUrl": "https://github.com/idreamer",
 	"isDesktopOnly": false
 }
