@@ -1,22 +1,10 @@
 import { Editor, MarkdownView, Plugin } from "obsidian";
 import { markdownToBlocks } from "@tryfabric/mack";
 
-interface MarkdownToSlackMsgSettings {
-	mySetting: string;
-}
-
-const DEFAULT_SETTINGS: MarkdownToSlackMsgSettings = {
-	mySetting: "default",
-};
-
 const SLACK_BLOCK_KIT_URI = "https://api.slack.com/tools/block-kit-builder";
 
 export default class MarkdownToSlackMsg extends Plugin {
-	settings: MarkdownToSlackMsgSettings;
-
 	async onload() {
-		await this.loadSettings();
-
 		this.addCommand({
 			id: "markdown-to-slack-message",
 			name: "Convert markdown to slack message",
@@ -33,16 +21,4 @@ export default class MarkdownToSlackMsg extends Plugin {
 	}
 
 	onunload() {}
-
-	async loadSettings() {
-		this.settings = Object.assign(
-			{},
-			DEFAULT_SETTINGS,
-			await this.loadData()
-		);
-	}
-
-	async saveSettings() {
-		await this.saveData(this.settings);
-	}
 }
